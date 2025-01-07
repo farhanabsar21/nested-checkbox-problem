@@ -1,4 +1,5 @@
 {
+  "homepage": "https://farhanabsar21.github.io/nested-checkbox-problem",
   "name": "react-ts-minimal",
   "version": "0.1.0",
   "type": "module",
@@ -15,6 +16,7 @@
     "@types/react-dom": "^18.2.0",
     "@vitejs/plugin-react": "^4.2.0",
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.3.0",
     "jsdom": "^25.0.1",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
@@ -27,6 +29,8 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:watch": "vitest --watch",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "vitest --coverage",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   }
 }
